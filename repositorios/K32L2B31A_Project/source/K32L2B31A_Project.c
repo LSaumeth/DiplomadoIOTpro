@@ -1,10 +1,11 @@
 /*! @file : K32L2B31A_Projecto.c
  * @author  Leisman Alberto Saumeth Valdeblanquez
- * @version 0.0.000
+ * @version 0.0.00
  * @date    23/08/2021
  * @brief   Funcion principal main
  * @details
- *            v0.0.000    Proyecto base creado usando MCUXpresso
+ *            v0.0.00
+ *            Proyecto base creado en MCUXpresso
  *
  *
  */
@@ -22,27 +23,12 @@
 /*******************************************************************************
  * Definitions
  ******************************************************************************/
-
-
-
-
-
 /*******************************************************************************
  * Private Prototypes
  ******************************************************************************/
-
-
-
-
-
 /*******************************************************************************
  * External vars
  ******************************************************************************/
-
-
-
-
-
 /*******************************************************************************
  * Local vars
  ******************************************************************************/
@@ -57,19 +43,9 @@ unsigned int test_global_var=100;
 void delay_block(void){
     uint32_t i;
     for(i=0;i<0xFFFFF;i++){
-
-
-
-
-
     }
 }
 int main(void) {
-
-
-
-
-
     /* Init board hardware. */
     BOARD_InitBootPins();
     BOARD_InitBootClocks();
@@ -78,27 +54,11 @@ int main(void) {
     /* Init FSL debug console. */
     BOARD_InitDebugConsole();
 #endif
-
-
-
-
-
     PRINTF("Hello World\r\n");
     PRINTF("test_global_var:%d\r\n",test_global_var);
-
-
-
-
-
-
-
     /* Enter an infinite loop, just incrementing a counter. */
-
-
-
-
-
     bool intercambio =false;
+    /* Contador de encendido y apagado de led verde. */
     while(1) {
         for(short k=0;k<10;k++){
         encender_led_verde();
@@ -106,6 +66,7 @@ int main(void) {
         apagar_led_verde();
         delay_block();
     }
+       /* Negar entrada "intercambio" y cambio de encendido de led rojo.*/
         if(!intercambio){
             intercambio =true;
             encender_led_rojo();
