@@ -1,5 +1,5 @@
 /*! @file : leds.h
- * @author  Ernesto Andres Rincon Cruz
+ * @author  Leisman Alberto Saumeth Valdeblanquez
  * @version 1.0.0
  * @date    1/09/2021
  * @brief   Driver para 
