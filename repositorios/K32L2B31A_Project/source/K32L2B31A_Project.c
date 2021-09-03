@@ -1,5 +1,5 @@
 /*! @file : K32L2B31A_Projecto.c
- * @author  Leisman Alberto Saumeth Valdeblanquez
+ * @author  Ana Alarcon Pasos
  * @version 0.0.000
  * @date    23/08/2021
  * @brief   Funcion principal main
